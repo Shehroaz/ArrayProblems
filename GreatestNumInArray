@@ -1,0 +1,14 @@
+ public int greatestNumInArray(int[] array){
+        int greatest = 0;
+        for (int i = 0, j = array.length-1; i < j;){
+            if (array[i] > array[j] || array[i] == array[j] ) {
+                greatest = array[i];
+                j--;
+            }
+            else {
+                greatest = array [j];
+                i++;
+            }
+        }
+        return greatest;
+    }
