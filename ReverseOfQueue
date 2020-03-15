@@ -1,0 +1,14 @@
+  /**
+     * This method reverse a queue, we take a stack and remove items from QUEUE and add
+      them into STACK, then pop items from stack and add them into queue so or queue is reversed
+     * @param queue take as a parameter which we reverse
+     */
+    public void reverseOfQueue(Queue<Integer> queue){
+        Stack<Integer> stack = new Stack<>();
+        while (!queue.isEmpty())
+            stack.push(queue.remove());
+
+        while (!stack.empty())
+            queue.add(stack.pop());
+
+    }
